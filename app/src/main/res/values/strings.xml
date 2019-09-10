@@ -1,0 +1,34 @@
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <!--User input app name, signature and client id-->
+    <string name="package_id">com.google.appflip_sample_android</string>
+    <string name="intent_filter_name">com.google.appflip-sample</string>
+    <string name="target_app_signature">54:e1:6a:b5:4c:cb:75:13:7d:cf:2a:4c:37:97:e4:5f:28:42:76:0a:6f:ce:c7:04:5f:49:0b:24:08:e7:e3:5e</string>
+    <string name="client_id">1234</string>
+    <string name="scope">scope1</string>
+    <string name="redirect_uri">http://google.com/oauth/</string>
+    <!--Labels-->
+    <string name="app_name">AppFlip Test Tool</string>
+    <string name="titleLabel">Welcome to AppFlip Tester</string>
+    <string name="applicationIDLabel">Package Name</string>
+    <string name="intentFilterLabel">Intent Filter Action Name</string>
+    <string name="intentFilterLabelHint">Please input intent filter action settings of your app.</string>
+    <string name="clientIdLabel">Client ID</string>
+    <string name="sigLabel">Fingerprint of Signing Certificate</string>
+    <string name="chkSigBtn">Check Signature</string>
+    <string name="flipButton">Try Flip!</string>
+</resources>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <TextView
+    android:id="@+id/titleLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="@string/titleLabel"
+    android:textSize="18sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+    android:id="@+id/appIdLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="80dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="8dp"
+    android:text="@string/applicationIDLabel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/appIdEditText"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <EditText
+    android:id="@+id/appIdEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:hint="@string/package_id"
+    android:inputType="textPersonName"
+    android:text="@string/package_id"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/appIdLabel"/>
+
+  <TextView
+    android:id="@+id/intentFilterLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="4dp"
+    android:text="@string/intentFilterLabel"
+    app:layout_constraintStart_toStartOf="@+id/appIdEditText"
+    app:layout_constraintTop_toBottomOf="@+id/appIdEditText"/>
+  <EditText
+    android:id="@+id/intentFilterEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:hint="@string/intentFilterLabelHint"
+    android:inputType="textPersonName"
+    android:text="@string/intent_filter_name"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="@+id/appIdEditText"
+    app:layout_constraintTop_toBottomOf="@+id/intentFilterLabel"/>
+  <TextView
+    android:id="@+id/clientIdLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="8dp"
+    android:text="@string/clientIdLabel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/clientIdEditText"
+    app:layout_constraintTop_toBottomOf="@+id/intentFilterEditText"/>
+  <EditText
+    android:id="@+id/clientIdEditText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:ems="10"
+    android:hint="@string/clientIdLabel"
+    android:inputType="text"
+    android:text="@string/client_id"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/appIdEditText"
+    app:layout_constraintTop_toBottomOf="@+id/clientIdLabel"/>
+  <TextView
+    android:id="@+id/sigLabel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="4dp"
+    android:text="@string/sigLabel"
+    app:layout_constraintStart_toStartOf="@+id/signatureEditText"
+    app:layout_constraintTop_toBottomOf="@+id/clientIdEditText"/>
+  <EditText
+    android:id="@+id/signatureEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:ems="10"
+    android:hint="@string/target_app_signature"
+    android:inputType="textPersonName"
+    android:text="@string/target_app_signature"
+    android:textSize="14sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/clientIdEditText"
+    app:layout_constraintTop_toBottomOf="@+id/sigLabel"/>
+
+  <Button
+    android:id="@+id/flipButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="24dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:text="@string/flipButton"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/signatureEditText"/>
+  <TextView
+    android:id="@+id/resultText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="32dp"
+    android:layout_marginRight="32dp"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/flipButton"
+    app:layout_constraintVertical_bias="0.24000001"/>
+
+</android.support.constraint.ConstraintLayout>
