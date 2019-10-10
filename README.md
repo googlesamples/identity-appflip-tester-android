@@ -21,7 +21,7 @@ in your Android app.
 1. Open `res/values/strings.xml` and edit the following values:
    - `package_id`: Application id of your app
    - `intent_filter_name`: Intent action configured with App Flip for your app
-   - `target_app_signature`: SHA fingerprint for your app's signature
+   - `target_app_signature`: SHA256 fingerprint for your app's signature
      ([how do I find this?](https://developers.google.com/android/guides/client-auth))
    - `client_id`: Client id configured with App Flip for your app
    - `scope`: Optional additional auth scopes configured with App Flip for your app
