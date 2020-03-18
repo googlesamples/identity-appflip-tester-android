@@ -6,9 +6,14 @@ This app simulates the intent triggered by Google mobile apps when App Flip is e
 Use this tool to debug issues you may be experiencing with App Flip and account linking
 in your Android app.
 
-## Screenshots
+The App Flip Test Tool can be used to test with the Google
+[App Flip Sample for Android](https://github.com/googlesamples/identity-appflip-android),
+or your own Android app with an App Flip account linking integration.
 
-![](images/screenshot.png)
+Documentation links:
+
+- [App Flip Overview](https://developers.google.com/identity/account-linking/app-flip-overview)
+- [App Flip for Android](https://developers.google.com/identity/account-linking/app-flip-android)
 
 ## Prerequisites
 
@@ -33,6 +38,10 @@ Launch the test tool application on your device, and tap **Try Flip**.
 The device should launch your Android app to complete the authorization flow.
 After completing user authorization, the test tool will display any `auth_code`
 or `error` messages in the log.
+
+## Screenshots
+
+![](images/screenshot.png)
 
 ## License
 
