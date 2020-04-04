@@ -1,5 +1,7 @@
 # App Flip Test Tool for Android
 
+[![ci][1]][2]
+
 The App Flip Test Tool is designed to verify your Android app's integration with
 App Flip for Google account linking.
 This app simulates the intent triggered by Google mobile apps when App Flip is enabled.
@@ -58,3 +60,6 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+
+[1]: https://github.com/googlesamples/identity-appflip-tester-android/workflows/ci/badge.svg
+[2]: https://github.com/googlesamples/identity-appflip-tester-android/actions
