@@ -19,7 +19,9 @@
     <string name="intent_filter_name">com.google.appflip-sample</string>
     <string name="target_app_signature">54:e1:6a:b5:4c:cb:75:13:7d:cf:2a:4c:37:97:e4:5f:28:42:76:0a:6f:ce:c7:04:5f:49:0b:24:08:e7:e3:5e</string>
     <string name="client_id">1234</string>
-    <string name="scope">scope1</string>
+    <string-array name="scope">
+        <item>scope1</item>
+    </string-array>
     <string name="redirect_uri">http://google.com/oauth/</string>
     <!--Labels-->
     <string name="app_name">AppFlip Test Tool</string>

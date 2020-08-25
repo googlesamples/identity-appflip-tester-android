@@ -29,7 +29,7 @@ Documentation links:
    - `target_app_signature`: SHA256 fingerprint for your app's signature
      ([how do I find this?](https://developers.google.com/android/guides/client-auth))
    - `client_id`: Client id configured with App Flip for your app
-   - `scope`: Optional additional auth scopes configured with App Flip for your app
+   - `scope`: Optional additional auth scopes array configured with App Flip for your app
 1. Build and run the app on your target device
 
 ## Usage
