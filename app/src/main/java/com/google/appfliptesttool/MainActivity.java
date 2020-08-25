@@ -22,6 +22,7 @@ import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
   private static final int APP_FLIP_INVALID_REQUEST_ERROR = 3;
   private static final int APP_FLIP_USER_DENIED_3P_CONSENT_ERROR_CODE = 13;
   private static final int RC_APP_FLIP = 100;
-  private String scopes;
+  private String[] scopes;
   private String redirectUri;
   private TextView logTextView;
   private EditText appNameToFlip, clientID, signatureEditText, intentFilterName;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
+    Resources res = getResources();
     Button appFlipButton = findViewById(R.id.flipButton);
     logTextView = findViewById(R.id.resultText);
     appNameToFlip = findViewById(R.id.appIdEditText);
@@ -75,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
     context = getApplicationContext();
     signatureEditText = findViewById(R.id.signatureEditText);
     clientID = findViewById(R.id.clientIdEditText);
-    scopes = getString(R.string.scope);
+    scopes = res.getStringArray(R.array.scope);
     redirectUri = getString(R.string.redirect_uri);
 
     appFlipButton.setOnClickListener(new View.OnClickListener() {
